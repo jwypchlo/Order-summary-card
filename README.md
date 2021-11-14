@@ -7,6 +7,9 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 Desktop
 ![Desktop](./OSComponent-desktop.png)
 
+Mobile
+![Mobile](./OSComponent-mobile.png)
+
 ### Built with
 
 - Semantic HTML5 markup
