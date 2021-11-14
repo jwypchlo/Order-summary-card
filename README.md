@@ -5,9 +5,11 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ### Screenshot
 
 Desktop
+
 ![Desktop](./OSComponent-desktop.png)
 
 Mobile
+
 ![Mobile](./OSComponent-mobile.png)
 
 ### Built with
