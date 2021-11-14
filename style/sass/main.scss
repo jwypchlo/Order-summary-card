@@ -1,0 +1,152 @@
+$color-primary-light-blue: hsl(225, 100%, 94%);
+$color-primary-bright-blue: hsl(245, 75%, 52%);
+$color-white: hsl(0, 0, 100);
+$color-neutral-very-pale-blue: hsl(225, 100%, 98%);
+$color-neutral-desaturated-blue: hsl(224, 23%, 55%);
+$color-neutral-dark-blue: hsl(223, 47%, 23%);
+$color-purple: hsl(245, 83%, 69%);
+
+@mixin btns {
+  border-style: none;
+  height: 4rem;
+  border-radius: 0.7rem;
+  font-weight: 700;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-primary-light-blue;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  height: 60rem;
+  width: 45rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-white;
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+  border-radius: 2rem;
+  overflow: hidden;
+  filter: drop-shadow(0rem 1rem 1.3rem $color-neutral-desaturated-blue);
+}
+
+.image {
+  background-image: url(../../images/illustration-hero.svg);
+  background-repeat: no-repeat;
+  min-height: 25rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem 0 5rem;
+
+  &_header {
+    font-weight: 900;
+    color: $color-neutral-dark-blue;
+  }
+
+  &_paragraph {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: $color-neutral-desaturated-blue;
+    text-align: center;
+  }
+
+  &_plan {
+    background-color: $color-neutral-very-pale-blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    width: 35rem;
+    height: 8rem;
+    border-radius: 1rem;
+
+    &__icon {
+      margin-left: -1rem;
+    }
+
+    &__info {
+      margin-left: -5rem;
+
+      &_header {
+        font-weight: 900;
+        font-size: 1.5rem;
+        color: $color-neutral-dark-blue;
+      }
+
+      &_price {
+        font-weight: 500;
+        color: $color-neutral-desaturated-blue;
+      }
+    }
+
+    &__link {
+      color: $color-primary-bright-blue;
+      font-weight: 700;
+
+      &:hover {
+        cursor: pointer;
+        color: $color-purple;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+    width: 100%;
+
+    &__first {
+      @include btns;
+      margin-bottom: 1.2rem;
+      background-color: $color-primary-bright-blue;
+      color: $color-neutral-very-pale-blue;
+      filter: drop-shadow(0rem 1rem 1.3rem $color-neutral-desaturated-blue);
+
+      &:hover {
+        background-color: $color-purple;
+      }
+    }
+
+    &__second {
+      @include btns;
+      background-color: $color-white;
+      color: $color-neutral-desaturated-blue;
+
+      &:hover {
+        color: $color-neutral-dark-blue;
+        font-weight: 900;
+      }
+    }
+  }
+}
