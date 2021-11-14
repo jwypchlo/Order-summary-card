@@ -49,7 +49,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   border-radius: 2rem;
   overflow: hidden;
-  filter: drop-shadow(0rem 1rem 1.3rem $color-neutral-desaturated-blue);
+  box-shadow: 0 0.5rem 2rem $color-neutral-desaturated-blue;
 }
 
 .image {
@@ -86,7 +86,7 @@ body {
     margin-top: 2rem;
     width: 35rem;
     height: 8rem;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
 
     &__icon {
       margin-left: -1rem;
@@ -145,6 +145,53 @@ body {
 
       &:hover {
         color: $color-neutral-dark-blue;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url(../../images/pattern-background-mobile.svg);
+  }
+  .figure {
+    height: 54rem;
+    width: 33rem;
+    font-size: 1.4rem;
+  }
+
+  .image {
+    background-size: contain;
+  }
+
+  .content {
+    &_header {
+      margin-top: -6rem;
+      font-size: 2rem;
+    }
+
+    &_paragraph {
+      font-size: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    &_plan {
+      margin-top: 3rem;
+      width: 29rem;
+
+      &__info {
+        font-size: 1.3rem;
+      }
+      &__icon {
+        margin-right: 1rem;
+      }
+    }
+
+    &_btn {
+      width: 29rem;
+
+      &__second {
         font-weight: 900;
       }
     }
