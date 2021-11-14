@@ -5,7 +5,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ### Screenshot
 
 Desktop
-![Desktop](OSComponent-desktop.png)
+![Desktop](/OSComponent-desktop.png)
 
 ### Built with
 
